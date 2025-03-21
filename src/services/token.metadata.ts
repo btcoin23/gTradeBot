@@ -72,9 +72,11 @@ export const TokenService = {
   getMintInfo: async (mint: string) => {
     try {
       const overview = await TokenService.getTokenOverview(mint);
+      // console.log("overview", overview);
       if (!overview) return null;
 
       const secureinfo = await TokenService.getTokenSecurity(mint);
+      // console.log("secureinfo", secureinfo);
       const resdata = {
         overview,
         secureinfo
@@ -85,6 +87,7 @@ export const TokenService = {
 
       return resdata;
     } catch (e) {
+      console.log("~ Error getMintInfo ~", e);
       return null;
     }
   },

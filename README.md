@@ -38,13 +38,13 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/btcoin23/Growtradebot.git
+git clone https://github.com/btcoin23/gTradeBot.git
 ```
 
 2. Go to the project directory:
 
 ```sh
-cd Growtradebot
+cd gTradeBot
 ```
 
 3. Install the dependencies:
